@@ -1,0 +1,124 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c736d0c2-dfac-4565-9d6c-02a7d8b173cd}</ProjectGuid>
+    <SubObjectsSortedByName>True</SubObjectsSortedByName>
+    <DownloadApplicationInfo>true</DownloadApplicationInfo>
+    <WriteProductVersion>true</WriteProductVersion>
+    <GenerateTpy>false</GenerateTpy>
+    <Name>EE_Test_PLC_Code</Name>
+    <ProgramVersion>3.1.4023.0</ProgramVersion>
+    <Application>{dae748aa-ed1b-472e-a8f5-11ab75dc85bf}</Application>
+    <TypeSystem>{4921b901-3e00-445f-8cfb-e9ac1ed9100a}</TypeSystem>
+    <Implicit_Task_Info>{93fe16f0-9b9c-4b8c-8b6b-fec609215b43}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{ba4d36dc-a384-44d1-aee5-beadf4f37e6f}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{941e21e1-4355-4181-9fe8-21bc34649c1a}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{72e10a90-bed4-4ea5-b3a2-cde8ef7d579c}</LibraryReferences>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="JBOX_DUTs\JBOX_HMI_Button.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_DUTs\JBOX_HMI_Instructions.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_DUTs\JBOX_IO_Struct.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_DUTs\JBOX_Test_Log.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_DUTs\JBOX_Port_Map.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_DUTs\JBOX_SL_INSTRUCTIONS.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_GVLs\CONSTANTS.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="JBOX_GVLs\JBOX_GVL_HMI.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="JBOX_GVLs\JBOX_GVL_LOGS.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="JBOX_GVLs\JBOX_GVL_IO.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="JBOX_GVLs\JBOX_GVL_IO_STRUCTS.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="JBOX_POUs\FB_EXECUTE_SECTION1.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_POUs\FB_EXECUTE_SECTION2.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_POUs\INITIALIZE.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_POUs\LOG_SECTION1.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_POUs\LOG_SECTION2.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_POUs\MAIN.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_POUs\UNINITIALIZE.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JBOX_POUs\WRITE_IO_VALUES.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlcTask.TcTTO">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="JBOX_DUTs" />
+    <Folder Include="JBOX_GVLs" />
+    <Folder Include="VISUs" />
+    <Folder Include="JBOX_POUs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderReference Include="Tc2_Standard">
+      <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_Standard</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_System">
+      <DefaultResolution>Tc2_System, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_System</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc3_Module">
+      <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc3_Module</Namespace>
+    </PlaceholderReference>
+  </ItemGroup>
+  <ProjectExtensions>
+    <PlcProjectOptions>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="OptionKey">
+      <v n="Name">"&lt;ProjectRoot&gt;"</v>
+      <d n="SubKeys" t="Hashtable" />
+      <d n="Values" t="Hashtable" />
+    </o>
+        </Data>
+        <TypeList>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+          <Type n="String">System.String</Type>
+        </TypeList>
+      </XmlArchive>
+    </PlcProjectOptions>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Refactors>
+  <Renames>
+    <RenamedType>
+      <Type guid="7480ea69-84c6-4258-b51a-aa3287cb9719">IO_STRUCT</Type>
+      <From>IO_Struct</From>
+      <To>JBOX_IO_Struct</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="cce2fca4-8635-4e79-a8ec-4f7d44b41631">PORT_MAP</Type>
+      <From>Port_Map</From>
+      <To>JBOX_Port_Map</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="5560d6c1-2f2f-4b9d-8259-d0697722220f">GVL_LOGS</Type>
+      <From>GVL_JBOX</From>
+      <To>JBOX_GVL_LOGS</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="99ab54a4-34ac-447e-8e15-602a1f030758">MAIN_1</Type>
+      <From>MAIN_1</From>
+      <To>MAIN</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="9ea6e128-0f43-4755-b87d-947306946000">HMI_BUTTON</Type>
+      <From>HMI_Button</From>
+      <To>JBOX_HMI_Button</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="5e4f4536-fb6a-4273-856f-b51f75eabb62">HMI_INSTRUCTIONS</Type>
+      <From>HMI_Instructions</From>
+      <To>JBOX_HMI_Instructions</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="db56f2e0-8d60-4cef-9beb-a82349e60923">SL_INSTRUCTIONS</Type>
+      <From>SL_INSTRUCTIONS</From>
+      <To>JBOX_SL_INSTRUCTIONS</To>
+    </RenamedType>
+  </Renames>
+</Refactors>

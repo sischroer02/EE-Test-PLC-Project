@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+  <GVL Name="JBOX_GVL_LOGS" Id="{5560d6c1-2f2f-4b9d-8259-d0697722220f}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+		
+	// Arrays to Log Test Results and Number of Tests Run
+	TEST_RESULTS_ARRAY : ARRAY[0..CONSTANTS.TOTAL_NUM_TESTS-1] OF JBOX_Test_Log; 
+	NUM_TESTS_LOGGED : INT;
+	
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
