@@ -3,11 +3,7 @@
   <GVL Name="JBOX_GVL_IO" Id="{7d9bac86-aeb8-4597-b481-8227ba1f0330}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
-	
-	// Arrays of Bools that will be written to with live data values for each test
-	SECTION1_DIG_INPUTS : ARRAY[0..CONSTANTS.SECTION1_NUM_DIG_TESTS-1] OF POINTER TO BOOL;
-	SECTION2_DIG_INPUTS : ARRAY[0..CONSTANTS.SECTION2_NUM_DIG_TESTS-1] OF POINTER TO BOOL;
-	
+
 	
 	
 	// Boolean Variables linked to live data on ports
@@ -53,17 +49,22 @@ VAR_GLOBAL
 	SF6_MGT_CONTINUITY AT%I* : BOOL; //6.0 : BOOL; (*INDEX 18 MGT Continuity SF6 (1008 (3) port 1) *)
 	{attribute 'TcLinkTo' := 'TIIB[C5 (EL1819)]^Channel 12^Input'}	
 	SF8_MGT_CONTINUITY AT%I* : BOOL; //6.1: BOOL; (*INDEX 19 MGT Continuity SF8 (1008 (3) port 2) *)
-	{attribute 'TcLinkTo' := 'TIIB[JBC0 (EK1914)]^Module 2 (DIO)^DIO Inputs^Input 1'}
+	
+	
+	{attribute 'TcLinkTo' := 'TIIB[B2 (EP1008-0002)]^Channel 4^Input'}
 	JB_Door_Switch AT%I* : BOOL; (* Door Switch *)
-	{attribute 'TcLinkTo' := 'TIIB[JBC0 (EK1914)]^Module 2 (DIO)^DIO Inputs^Input 0'}
+	{attribute 'TcLinkTo' := 'TIIB[B2 (EP1008-0002)]^Channel 1^Input'}
 	JB_DCDCS_OK AT%I* : BOOL; (* JBOX DCDC GOOD Signal *)
-	{attribute 'TcLinkTo' := 'TIIB[JBC0 (EK1914)]^Module 2 (DIO)^DIO Inputs^Input 2'}
-	JB_PSU1_OK AT%I* : BOOL; (* PSU 1 OK *)
-	{attribute 'TcLinkTo' := 'TIIB[JBC0 (EK1914)]^Module 2 (DIO)^DIO Inputs^Input 3'}
-	JB_PSU2_OK AT%I* : BOOL; (* PSU 2 OK *)
-	{attribute 'TcLinkTo' := 'TIIB[C2 (EL2014)]^DIG Outputs^Channel 2^Output'}
-	SF5_Fire_Alarm AT%Q* : BOOL; //3.1 : BOOL; (*INDEX 0 Fire Alarm Sound SF5 (2024 port 2) *)
-
+	{attribute 'TcLinkTo' := 'TIIB[B2 (EP1008-0002)]^Channel 2^Input'}
+	JB_PSUs_OK AT%I* : BOOL; (* PSUs OK *)
+	//{attribute 'TcLinkTo' := 'TIIB[C2 (EL2014)]^DIG Outputs^Channel 2^Output'}
+	//SF5_Fire_Alarm AT%Q* : BOOL; //3.1 : BOOL; (*INDEX 0 Fire Alarm Sound SF5 (2024 port 2) *)
+	{attribute 'TcLinkTo' := 'TIIB[B1 (EP3184-0002)]^AI Standard Channel 1^Value'}
+	JB_PSU1_IOUT AT%I* : INT; 
+	{attribute 'TcLinkTo' := 'TIIB[B1 (EP3184-0002)]^AI Standard Channel 2^Value'}
+	JB_PSU2_IOUT AT%I* : INT;
+	
+	
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

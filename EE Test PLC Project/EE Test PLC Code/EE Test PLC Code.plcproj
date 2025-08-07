@@ -17,66 +17,11 @@
     <LibraryReferences>{72e10a90-bed4-4ea5-b3a2-cde8ef7d579c}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="JBOX_DUTs\JBOX_HMI_Button.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_DUTs\JBOX_HMI_Instructions.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_DUTs\JBOX_IO_Struct.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_DUTs\JBOX_Test_Log.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_DUTs\JBOX_Port_Map.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_DUTs\JBOX_SL_INSTRUCTIONS.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_GVLs\CONSTANTS.TcGVL">
-      <SubType>Code</SubType>
-      <LinkAlways>true</LinkAlways>
-    </Compile>
-    <Compile Include="JBOX_GVLs\JBOX_GVL_HMI.TcGVL">
-      <SubType>Code</SubType>
-      <LinkAlways>true</LinkAlways>
-    </Compile>
-    <Compile Include="JBOX_GVLs\JBOX_GVL_LOGS.TcGVL">
-      <SubType>Code</SubType>
-      <LinkAlways>true</LinkAlways>
-    </Compile>
     <Compile Include="JBOX_GVLs\JBOX_GVL_IO.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
-    <Compile Include="JBOX_GVLs\JBOX_GVL_IO_STRUCTS.TcGVL">
-      <SubType>Code</SubType>
-      <LinkAlways>true</LinkAlways>
-    </Compile>
-    <Compile Include="JBOX_POUs\FB_EXECUTE_SECTION1.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_POUs\FB_EXECUTE_SECTION2.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_POUs\INITIALIZE.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_POUs\LOG_SECTION1.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_POUs\LOG_SECTION2.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="JBOX_POUs\MAIN.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_POUs\UNINITIALIZE.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="JBOX_POUs\WRITE_IO_VALUES.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PlcTask.TcTTO">
