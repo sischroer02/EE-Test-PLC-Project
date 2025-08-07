@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1300
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "EE Test PLC Project", "EE Test PLC Project\EE Test PLC Project.tsproj", "{B0887849-C2C8-4BA5-BC1E-82DA42A6B2C6}"
 EndProject
+Project("{FE7A1B72-C5B7-4D7C-BB7D-76384D4DE8E1}") = "EE Test HMI", "TcHmiProject1\EE Test HMI.hmiproj", "{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|TwinCAT CE7 (ARMV7) = Debug|TwinCAT CE7 (ARMV7)
@@ -55,6 +57,18 @@ Global
 		{C736D0C2-DFAC-4565-9D6C-02A7D8B173CD}.Release|TwinCAT RT (x64).Build.0 = Release|TwinCAT RT (x64)
 		{C736D0C2-DFAC-4565-9D6C-02A7D8B173CD}.Release|TwinCAT RT (x86).ActiveCfg = Release|TwinCAT RT (x86)
 		{C736D0C2-DFAC-4565-9D6C-02A7D8B173CD}.Release|TwinCAT RT (x86).Build.0 = Release|TwinCAT RT (x86)
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Debug|TwinCAT CE7 (ARMV7).ActiveCfg = Debug|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Debug|TwinCAT HMI.ActiveCfg = Debug|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Debug|TwinCAT HMI.Build.0 = Debug|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Debug|TwinCAT OS (ARMT2).ActiveCfg = Debug|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Debug|TwinCAT RT (x64).ActiveCfg = Debug|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Debug|TwinCAT RT (x86).ActiveCfg = Debug|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Release|TwinCAT CE7 (ARMV7).ActiveCfg = Release|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Release|TwinCAT HMI.ActiveCfg = Release|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Release|TwinCAT HMI.Build.0 = Release|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Release|TwinCAT OS (ARMT2).ActiveCfg = Release|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Release|TwinCAT RT (x64).ActiveCfg = Release|TwinCAT HMI
+		{06C99DCC-EFD9-40FE-8E62-1DBEED706FD1}.Release|TwinCAT RT (x86).ActiveCfg = Release|TwinCAT HMI
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

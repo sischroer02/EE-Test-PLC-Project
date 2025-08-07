@@ -29,7 +29,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
 			<BitSize>1</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -38,7 +38,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000005}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..4] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000005}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..4] OF BIT</Name>
 			<BitSize>5</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -47,7 +47,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
 			<BitSize>7</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -1250,9 +1250,9 @@ Bit1: Value is greater than or equal to limit 2]]></Comment>
 				<Link VarA="PlcTask Inputs^JBOX_GVL_IO.JB_PSU2_IOUT" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 3 (EtherCAT)^B2 (EP1008-0002)">
-				<Link VarA="PlcTask Inputs^JBOX_GVL_IO.JB_DCDCS_OK" VarB="Channel 2^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^JBOX_GVL_IO.JB_DCDCS_OK" VarB="Channel 1^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^JBOX_GVL_IO.JB_Door_Switch" VarB="Channel 4^Input" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^JBOX_GVL_IO.JB_PSUs_OK" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^JBOX_GVL_IO.JB_PSUs_OK" VarB="Channel 2^Input" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 3 (EtherCAT)^C0 (EK1914)^C3 (EL1018)">
 				<Link VarA="PlcTask Inputs^JBOX_GVL_IO.J7_24V_Up" VarB="Channel 1^Input" AutoLink="true"/>
